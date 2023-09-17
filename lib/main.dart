@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/router/app_router.dart';
+import 'package:shop_app/ui/screens/splash_screen.dart';
+import 'package:shop_app/ui/theme/theme.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp(appRouter: AppRouter(),),);
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key,required this.appRouter}) : super(key: key);
+  final AppRouter appRouter;
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      theme: CustomTheme.lightTheme,
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: appRouter.onGenerateRoute,
+      initialRoute: SplashScreen.screenId,
+    );
   }
 }
