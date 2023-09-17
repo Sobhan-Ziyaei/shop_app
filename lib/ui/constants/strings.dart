@@ -6,8 +6,13 @@ class SplashScreenStrings {
 }
 
 class MainScreenStrings {
-  static const profile = 'حساب کاربری' ;
-  static const cart = 'سبد خرید' ;
-  static const category = 'دسته بندی' ;
-  static const home = 'خانه' ;
+  static const profile = 'حساب کاربری';
+  static const cart = 'سبد خرید';
+  static const category = 'دسته بندی';
+  static const home = 'خانه';
+}
+
+class HomeScreenStrings {
+  static const searchProduct = 'جستجوی محصولات';
+  static const category = 'دسته بندی';
 }

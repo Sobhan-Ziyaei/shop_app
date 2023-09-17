@@ -8,18 +8,29 @@ class CustomTheme {
     textTheme: const TextTheme(
       bodySmall: TextStyle(
         color: whiteColor,
-        fontFamily: FontFamily.sb,
+        fontFamily: 'SB',
         fontSize: 20,
       ),
       bodyLarge: TextStyle(
         color: whiteColor,
-        fontFamily: FontFamily.sb,
+        fontFamily: 'SB',
         fontSize: 32,
+      ),
+      titleMedium: TextStyle(
+        color: greyColor,
+        fontFamily: 'SB',
+        fontSize: 14,
+        fontWeight: FontWeight.bold,
       ),
       labelSmall: TextStyle(
         color: blueColor,
-        fontFamily: FontFamily.sb,
+        fontFamily: 'SB',
         fontSize: 10,
+      ),
+      labelMedium: TextStyle(
+        color: blueColor,
+        fontFamily: 'SB',
+        fontSize: 16,
       ),
     ),
   );
